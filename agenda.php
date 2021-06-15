@@ -111,9 +111,9 @@ $twig = new Environment($loader, [
 ]);
 $twig->addExtension(new \Twig\Extension\DebugExtension());
 
-llxHeader("", $langs->trans("ProductsInSalesRepresentatives"));
+llxHeader("", $langs->trans("RecordsList"));
 
-print load_fiche_titre($langs->trans("ProductsInSalesRepresentatives"), '', 'virtualwarehouse.png@virtualwarehouse');
+print load_fiche_titre($langs->trans("RecordsList"), '', 'virtualwarehouse.png@virtualwarehouse');
 
 echo $twig->render('agenda.header.html.twig');
 echo $twig->render('agenda.content.html.twig', ['obj' => $object, 'lang' => $langs, 'post' => $_POST]);

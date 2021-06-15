@@ -14,14 +14,6 @@ main page of the module helps you track products and their Qty you have in your 
 
 Other external modules are available on [Dolistore.com](https://www.dolistore.com).
 
-## WORKFLOW
-
-1. Create record -> QTY is removed from Dolibarr stock
-2. Update record -> if you decrease the QTY (i.e. products are returned from the Sales reperesentative or you have made a mistake) -> Dolibarr stock is increased with the difference
-                 -> if you increase the QTY (i.e. more products are given to the Sales reperesentative or you have made a mistake) -> Dolibarr stock is decreased with the difference
-3. Delete record -> QTY is returned and Dolibarr stock is increased
-
-
 ## Translations
 
 Translations can be completed manually by editing files into directories *langs*.

@@ -1,3 +1,20 @@
+/**
+ * This Dolibarr plugin helps you track your product stock when you have employeed carring products with them
+ *
+ * @date           File created on Tue Jun 15 2021 17:24:07
+ *
+ * @category       Dolibarr plugin
+ * @package        Virtual Stock
+ * @link           https://blacktiehost.com/shop/dolibarr-modules/
+ * @since          1.0
+ * @version        1.0
+ * @author         Milen Karaganski <milen@blacktiehost.com>
+ * @license        GPL-2.0+
+ * @license        http://www.gnu.org/licenses/gpl-2.0.txt
+ * @copyright      Copyright (c) 2021 blacktiehost.com
+ *
+ */
+
 # Copyright (C) 2021 SuperAdmin
 #
 # This program is free software: you can redistribute it and/or modify
@@ -30,6 +47,8 @@ Settings = Settings
 VirtualWarehouseSetupPage = Virtual Warehouse setup page
 SalesRepUserGroup=ID of the Sales representative's User Group
 SalesRepUserGroupTooltip=Enter the ID of the Sales representative's User Group (1 for example
+COD=Customer order type
+CODTooltip= View README.md for more information
 
 #
 # About page

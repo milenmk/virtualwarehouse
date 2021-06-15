@@ -37,12 +37,6 @@
  * along with this program. If not, see <https://www.gnu.org/licenses/>.
  */
 
-/**
- *	\file       virtualwarehouse/virtualwarehouseindex.php
- *	\ingroup    virtualwarehouse
- *	\brief      Home page of virtualwarehouse top menu
- */
-
 // Load Dolibarr environment
 $res = 0;
 // Try main.inc.php into web root known defined into CONTEXT_DOCUMENT_ROOT (not always defined)

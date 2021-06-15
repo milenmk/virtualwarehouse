@@ -212,7 +212,7 @@ class VirtualStock extends CommonObject
     {
         global $langs;
 
-        $sql  = 'DELETE ' . MAIN_DB_PREFIX . 'virtualstock_module ';
+        $sql  = 'DELETE ';
         $sql .= 'FROM ';
         $sql .= '' . MAIN_DB_PREFIX . 'virtualstock_module ';
         $sql .= 'WHERE ';

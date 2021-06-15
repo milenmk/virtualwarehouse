@@ -14,6 +14,13 @@ main page of the module helps you track products and their Qty you have in your 
 
 Other external modules are available on [Dolistore.com](https://www.dolistore.com).
 
+## USAGE
+
+1. Limit users in module list
+
+As you may have a lot of internal users, to reduce names in list table it is advisable to move all you sales representatives in a separate group. Then, in module settings enter this group ID.
+This will filter names in both list table and add record dropdown. 
+
 ## WORKFLOW
 
 1. Create record -> QTY is removed from Dolibarr stock

@@ -1,22 +1,20 @@
 /**
+ * This Dolibarr plugin helps you track your product stock when you have employeed carring products with them
  *
- * This plugin helps you calculate salaries for Bulgaria
+ * @date           File created on Tue Jun 15 2021 17:23:46
  *
- * Created Date:  14/06/2021 10:24:19
- * Last Modified: 15/06/2021 01:17:21
- *
- * @category      Dolibarr plugin
- * @package       Bulgarian Salary
- * @link          https://blacktiehost.com/shop/dolibarr-modules/
- * @since         1.0
- * @version       1.0
- * @author        Milen Karaganski <milen@blacktiehost.com>
- *
- * @license       GPL-2.0+
- * @license       http://www.gnu.org/licenses/gpl-2.0.txt
- * @copyright     Copyright (c)  2021 blacktiehost.com
+ * @category       Dolibarr plugin
+ * @package        Virtual Stock
+ * @link           https://blacktiehost.com/shop/dolibarr-modules/
+ * @since          1.0
+ * @version        1.0
+ * @author         Milen Karaganski <milen@blacktiehost.com>
+ * @license        GPL-2.0+
+ * @license        http://www.gnu.org/licenses/gpl-2.0.txt
+ * @copyright      Copyright (c) 2021 blacktiehost.com
  *
  */
+
 # Copyright (C) 2021 SuperAdmin
 #
 # This program is free software: you can redistribute it and/or modify
@@ -49,6 +47,8 @@ Settings = Настройки
 VirtualWarehouseSetupPage = Виртуален склад страница с настройки
 SalesRepUserGroup=ИД на групата на Търговските представители
 SalesRepUserGroupTooltip=Въведете ИД на групата на Търговските представители като цяло число (например 1)
+COD=Тип на клиентската поръчка
+CODTooltip= Вижте README.md за повече информация
 
 
 #

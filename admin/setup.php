@@ -1,5 +1,22 @@
 <?php
 
+/**
+ * This Dolibarr plugin helps you track your product stock when you have employeed carring products with them
+ *
+ * @date           File created on Tue Jun 15 2021 17:27:58
+ *
+ * @category       Dolibarr plugin
+ * @package        Virtual Stock
+ * @link           https://blacktiehost.com/shop/dolibarr-modules/
+ * @since          1.0
+ * @version        1.0
+ * @author         Milen Karaganski <milen@blacktiehost.com>
+ * @license        GPL-2.0+
+ * @license        http://www.gnu.org/licenses/gpl-2.0.txt
+ * @copyright      Copyright (c) 2021 blacktiehost.com
+ *
+ */
+
 /* Copyright (C) 2004-2017 Laurent Destailleur  <eldy@users.sourceforge.net>
  * Copyright (C) 2021 SuperAdmin
  *
@@ -15,12 +32,6 @@
  *
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
- */
-
-/**
- * \file    virtualwarehouse/admin/setup.php
- * \ingroup virtualwarehouse
- * \brief   VirtualWarehouse setup page.
  */
 
 // Load Dolibarr environment

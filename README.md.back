@@ -8,11 +8,31 @@ When a record is created, the QTY set to the Sales representative is removed fro
 
 main page of the module helps you track products and their Qty you have in your sales representatives.
 
-![Screenshot virtualwarehouse](img/image_1.png "VirtualWarehouse"){:height="25%" width="25%"}
-![Screenshot virtualwarehouse](img/image_2.png "VirtualWarehouse"){:height="25%" width="25%"}
-![Screenshot virtualwarehouse](img/image_3.png "VirtualWarehouse"){:height="25%" width="25%"}
+![Screenshot virtualwarehouse](img/image_1.png "VirtualWarehouse")
+![Screenshot virtualwarehouse](img/image_2.png "VirtualWarehouse")
+![Screenshot virtualwarehouse](img/image_3.png "VirtualWarehouse")
 
 Other external modules are available on [Dolistore.com](https://www.dolistore.com).
+
+## USAGE
+
+1. Limit users in module list
+
+As you may have a lot of internal users, to reduce names in list table it is advisable to move all you sales representatives in a separate group. Then, in module settings enter this group ID.
+This will filter names in both list table and add record dropdown. 
+
+2. Auto decrease QTY on sales
+
+When your sales representative makes a direct sale of a product he/she has in him/her, there is an option to autodecrease the remaining qty they have.
+
+To do this, first, go to "Settings -> Dictionaries -> Origin of proposals/orders" and add new record like "Direct sale" or whatever you want.
+Then, on "Module settings" for "Customer order type" fill in this record ID.
+
+(To view the record ID, point with your mouse the pencil icon(edit) while in Origin of proposals/orders. 
+At  the bottom of your browser, you should see an URL like http://dolibarrurl/admin/dict.php?sortfield=code&sortorder=&rowid=12&code=..) where rowid is your record ID (12 in the example).
+
+At last, when your sales representative makes a direct sale, when creating the order they should choose for "Channel" the option you have created above, 
+and the QTY for the product(s) in the Customer order will be deduced from their stock.
 
 ## WORKFLOW
 

@@ -1,4 +1,22 @@
 <?php
+
+/**
+ * This Dolibarr plugin helps you track your product stock when you have employeed carring products with them
+ *
+ * @date           File created on Tue Jun 15 2021 17:26:48
+ *
+ * @category       Dolibarr plugin
+ * @package        Virtual Stock
+ * @link           https://blacktiehost.com/shop/dolibarr-modules/
+ * @since          1.0
+ * @version        1.0
+ * @author         Milen Karaganski <milen@blacktiehost.com>
+ * @license        GPL-2.0+
+ * @license        http://www.gnu.org/licenses/gpl-2.0.txt
+ * @copyright      Copyright (c) 2021 blacktiehost.com
+ *
+ */
+
 /* Copyright (C) 2021 SuperAdmin
  *
  * This program is free software: you can redistribute it and/or modify
@@ -15,11 +33,6 @@
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-/**
- * \file    virtualwarehouse/lib/virtualwarehouse.lib.php
- * \ingroup virtualwarehouse
- * \brief   Library files with common functions for VirtualWarehouse
- */
 
 /**
  * Prepare admin pages header
@@ -28,39 +41,39 @@
  */
 function virtualwarehouseAdminPrepareHead()
 {
-	global $langs, $conf;
+    global $langs, $conf;
 
-	$langs->load("virtualwarehouse@virtualwarehouse");
+    $langs->load("virtualwarehouse@virtualwarehouse");
 
-	$h = 0;
-	$head = array();
+    $h = 0;
+    $head = array();
 
-	$head[$h][0] = dol_buildpath("/virtualwarehouse/admin/setup.php", 1);
-	$head[$h][1] = $langs->trans("Settings");
-	$head[$h][2] = 'settings';
-	$h++;
+    $head[$h][0] = dol_buildpath("/virtualwarehouse/admin/setup.php", 1);
+    $head[$h][1] = $langs->trans("Settings");
+    $head[$h][2] = 'settings';
+    $h++;
 
-	/*
-	$head[$h][0] = dol_buildpath("/virtualwarehouse/admin/myobject_extrafields.php", 1);
-	$head[$h][1] = $langs->trans("ExtraFields");
-	$head[$h][2] = 'myobject_extrafields';
-	$h++;
-	*/
+    /*
+    $head[$h][0] = dol_buildpath("/virtualwarehouse/admin/myobject_extrafields.php", 1);
+    $head[$h][1] = $langs->trans("ExtraFields");
+    $head[$h][2] = 'myobject_extrafields';
+    $h++;
+    */
 
-	$head[$h][0] = dol_buildpath("/virtualwarehouse/admin/about.php", 1);
-	$head[$h][1] = $langs->trans("About");
-	$head[$h][2] = 'about';
-	$h++;
+    $head[$h][0] = dol_buildpath("/virtualwarehouse/admin/about.php", 1);
+    $head[$h][1] = $langs->trans("About");
+    $head[$h][2] = 'about';
+    $h++;
 
-	// Show more tabs from modules
-	// Entries must be declared in modules descriptor with line
-	//$this->tabs = array(
-	//	'entity:+tabname:Title:@virtualwarehouse:/virtualwarehouse/mypage.php?id=__ID__'
-	//); // to add new tab
-	//$this->tabs = array(
-	//	'entity:-tabname:Title:@virtualwarehouse:/virtualwarehouse/mypage.php?id=__ID__'
-	//); // to remove a tab
-	complete_head_from_modules($conf, $langs, null, $head, $h, 'virtualwarehouse');
+    // Show more tabs from modules
+    // Entries must be declared in modules descriptor with line
+    //$this->tabs = array(
+    //	'entity:+tabname:Title:@virtualwarehouse:/virtualwarehouse/mypage.php?id=__ID__'
+    //); // to add new tab
+    //$this->tabs = array(
+    //	'entity:-tabname:Title:@virtualwarehouse:/virtualwarehouse/mypage.php?id=__ID__'
+    //); // to remove a tab
+    complete_head_from_modules($conf, $langs, null, $head, $h, 'virtualwarehouse');
 
-	return $head;
+    return $head;
 }

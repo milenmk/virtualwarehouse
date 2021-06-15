@@ -1,0 +1,49 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+<form method="POST">
+    <div class="tabBar tabBarWithBottom">
+        <table class="border centpercent">
+            <tbody>
+                <tr>
+                    <td style="padding: 10px;" class="titlefieldcreate"><span class="fieldrequired">{{
+                            lang.trans('SalesRepName')}}</span></td>
+                    <td style="padding: 10px;" class="maxwidthonsmartphone">
+                        <select name="salesrep_select">
+                            {% for salesRep in obj.getSalesRepresentatives %}
+                            <option value="{{ salesRep.rowid }}">{{ salesRep.firstname }} {{
+                                salesRep.lastname }}</option>
+                            {% endfor %}
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding: 10px;" class="titlefieldcreate"><span class="fieldrequired">{{
+                            lang.trans('Product')}}</span></td>
+                    <td style="padding: 10px;" class="maxwidthonsmartphone">
+                        <select id="product_select" class="flat product_select minwidth100 select2-accessible"
+                            name="product_select" data-select2-id="product_select" tabindex="-1" aria-hidden="true">
+                            {% for productsList in obj.getProductsList %}
+                            <option value="{{ productsList.rowid }}">{{productsList.label}}</option>
+                            {% endfor %}
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding: 10px;" class="titlefieldcreate"><span class="fieldrequired">{{
+                            lang.trans('Quantity')}}</span></td>
+                    <td style="padding: 10px;" class="maxwidthonsmartphone">
+                        <input type="text" name="qty_to_add" value="" />
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="center">
+        <input type="submit" class="button" name="add" value="{{lang.trans('Create') }}">
+        &nbsp;
+        <input type="'.($backtopage ? " submit" : "button" ).'" class="button button-cancel" name="cancel"
+            value="{{lang.trans('Cancel') }}"'.($backtopage ? ''
+            : ' onclick="javascript:history.go(-1)"' ).'>
+    </div>
+</form>
+{% endblock %}

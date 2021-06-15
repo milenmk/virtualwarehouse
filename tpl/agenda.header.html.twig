@@ -1,0 +1,25 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+<div class="fichecenter">
+    <div class='div-table-responsive'>
+        <table width='100%' class='tagtable liste listwithfilterbefore'>
+            <thead>
+                <th class="center">
+                    &numero;
+                </th>
+                <th class="center">
+                    {{lang.trans('Date')}}
+                </th>
+                <th class="left">
+                    {{lang.trans('SalesRepName')}}
+                </th>
+                <th class="left">
+                    {{lang.trans('Product')}}
+                </th>
+                <th class="center">
+                    {{lang.trans('Quantity')}}
+                </th>
+                <th></th>
+            </thead>
+            <tbody>
+                {% endblock %}

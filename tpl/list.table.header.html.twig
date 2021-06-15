@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+<div class="div-table-responsive">
+    <table class="tagtable liste listwithfilterbefore">
+        <tbody>
+            <tr class="liste_titre">
+                <th class="wrapcolumntitle liste_titre" align="center">{{ lang.trans('SalesRep')}}</th>
+                {% for productsList in obj.getProductsList %}
+                <th class="liste_titre" align="center">{{ productsList.label }}1</th>
+                {% endfor %}
+                <th class="liste_titre" align="center">{{ lang.trans('TotalQty') }}</th>
+            </tr>
+            {% endblock %}

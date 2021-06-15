@@ -1,0 +1,31 @@
+{% extends 'agenda.header.html.twig' %}
+{% block body %}
+{% set i = 1 %}
+{% for record in obj.getVirtualStock %}
+<tr class="oddeven">
+    <form method="post">
+        <td class="center nowrap">{{record.rowid}}</td>
+        <td class="center nowrap">{{record.date_added}}</td>
+        <td class="left nowrap">{{record.firstname}} {{record.lastname}}</td>
+        <td class="left nowrap">{{record.product}}</td>
+        <td class="center nowrap">{{record.qty}}</td>
+        <input type="hidden" id="{{i}}" name="recordId" value="{{record.rowid}}" />
+        <input type="hidden" id="{{i}}" name="fk_user" value="{{record.fk_user}}" />
+        <input type="hidden" id="{{i}}" name="fk_product" value="{{record.fk_product}}" />
+        <input type="hidden" id="{{i}}" name="qty" value="{{record.qty}}" />
+        <td class="center nowrap">
+            <div class="center">
+                <input type="submit" id="{{i}}" class="button" name="delete" formaction="edit.php"
+                    value="{{lang.trans('Edit') }}">
+                &nbsp;
+                <input type="submit" id="{{i}}" class="button" name="delete" value="{{lang.trans('Delete') }}">
+            </div>
+        </td>
+    </form>
+</tr>
+{% set i = i + 1 %}
+{% endfor %}
+{% if post.delete %}
+{{ obj.deleteVirtualStock(post.recordId) }}
+{% endif %}
+{% endblock %}

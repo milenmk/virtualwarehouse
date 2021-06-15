@@ -1,0 +1,43 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+<form method="POST">
+    <div class="tabBar tabBarWithBottom">
+        <table class="border centpercent">
+            <tbody>
+                <tr>
+                    <td style="padding: 10px;" class="titlefieldcreate"><span class="fieldrequired">{{
+                            lang.trans('SalesRepName')}}</span></td>
+                    <td style="padding: 10px;" class="maxwidthonsmartphone">
+                        {{user.firstname}} {{user.lastname}}
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding: 10px;" class="titlefieldcreate"><span class="fieldrequired">{{
+                            lang.trans('Product')}}</span></td>
+                    <td style="padding: 10px;" class="maxwidthonsmartphone">
+                        {{product.label}}
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding: 10px;" class="titlefieldcreate"><span class="fieldrequired">{{
+                            lang.trans('Quantity')}}</span></td>
+                    <td style="padding: 10px;" class="maxwidthonsmartphone">
+                        <input type="text" name="qty" value="{{ qty }}" />
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="center">
+        <input type="hidden" name="recordId" value="{{recordid}}" />
+        <input type="hidden" name="fk_user" value="{{userid}}" />
+        <input type="hidden" name="fk_product" value="{{productid}}" />
+        <input type="submit" class="button" name="update" value="{{lang.trans('Update') }}">
+        &nbsp;
+        <input type="'.($backtopage ? " submit" : "button" ).'" class="button button-cancel" name="cancel"
+            value="{{lang.trans('Cancel') }}"'.($backtopage ? ''
+            : ' onclick="javascript:history.go(-1)"' ).'>
+    </div>
+    <input type="hidden" value={{ record }} />
+</form>
+{% endblock %}

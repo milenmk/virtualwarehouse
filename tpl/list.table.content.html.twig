@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+{% for salsRep in obj.getSalesRepresentatives(srug) %}
+<tr class="oddeven"></tr>
+<td class="leftnowrap"><a href="{{url}}/user/card.php?id={{ salsRep.rowid }}">{{ salsRep.firstname }} {{
+                salsRep.lastname }}</a>
+</td>
+
+{% set totalqty = 0 %}
+{% for productsList in obj.getProductsList %}
+
+<td class="center nowrap">{{obj.getVirtualStockQty(salsRep.rowid, productsList.rowid)}}</td>
+{% set totalqty = totalqty + obj.getVirtualStockQty(salsRep.rowid, productsList.rowid) %}
+{% endfor %}
+<td class="center nowrap"><strong>{{ totalqty }}</strong></td>
+</tr>
+{% endfor %}
+{% endblock %}

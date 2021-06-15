@@ -1,0 +1,73 @@
+/**
+ *
+ * This plugin helps you calculate salaries for Bulgaria
+ *
+ * Created Date:  14/06/2021 10:24:19
+ * Last Modified: 15/06/2021 01:17:21
+ *
+ * @category      Dolibarr plugin
+ * @package       Bulgarian Salary
+ * @link          https://blacktiehost.com/shop/dolibarr-modules/
+ * @since         1.0
+ * @version       1.0
+ * @author        Milen Karaganski <milen@blacktiehost.com>
+ *
+ * @license       GPL-2.0+
+ * @license       http://www.gnu.org/licenses/gpl-2.0.txt
+ * @copyright     Copyright (c)  2021 blacktiehost.com
+ *
+ */
+# Copyright (C) 2021 SuperAdmin
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+#
+# Generic
+#
+
+# Module label 'ModuleVirtualWarehouseName'
+ModuleVirtualWarehouseName = Виртуален склад
+# Module description 'ModuleVirtualWarehouseDesc'
+ModuleVirtualWarehouseDesc = Виртуален склад description
+
+#
+# Admin page
+#
+VirtualWarehouseSetup = Виртуален склад настройки
+Settings = Настройки
+VirtualWarehouseSetupPage = Виртуален склад страница с настройки
+SalesRepUserGroup=ИД на групата на Търговските представители
+SalesRepUserGroupTooltip=Въведете ИД на групата на Търговските представители като цяло число (например 1)
+
+
+#
+# About page
+#
+About = About
+VirtualWarehouseAbout = Относно Виртуален склад
+VirtualWarehouseAboutPage = Относно Виртуален склад
+
+#
+# Pages
+#
+ListStock=Списък с наличности
+ProductsInSalesRepresentatives=Налични продукти в Търговските представители
+AddRecord=Добави запис
+AddStockToSalesRepresentative=Добави наличност към Търговски представител
+UpdateStockToSalesRepresentative=Актуализирай наличност към Търговски представител
+SalesRepName=Търговски представител
+RecordCreated=Записът е добавен в базата данни
+RecordUpdated=Записът в базата данни е обновен
+RecordsList=Списък със записи
+TotalQty=Общо количество

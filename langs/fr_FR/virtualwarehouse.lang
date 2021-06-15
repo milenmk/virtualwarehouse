@@ -1,0 +1,53 @@
+# Copyright (C) 2021 SuperAdmin
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+#
+# Generic
+#
+
+# Module label 'ModuleVirtualWarehouseName'
+ModuleVirtualWarehouseName = Virtual Warehouse
+# Module description 'ModuleVirtualWarehouseDesc'
+ModuleVirtualWarehouseDesc = Virtual Warehouse description
+
+#
+# Admin page
+#
+VirtualWarehouseSetup = VirtualWarehouse setup
+Settings = Settings
+VirtualWarehouseSetupPage = Virtual Warehouse setup page
+SalesRepUserGroup=ID of the Sales representative's User Group
+SalesRepUserGroupTooltip=Enter the ID of the Sales representative's User Group (1 for example
+
+#
+# About page
+#
+About = About
+VirtualWarehouseAbout = About VirtualWarehouse
+VirtualWarehouseAboutPage = VirtualWarehouse about page
+
+#
+# Pages
+#
+ListStock=Stock list
+ProductsInSalesRepresentatives=Products on stock in Sales Representatives
+AddRecord=Add Record
+AddStockToSalesRepresentative=Add stock to Sales Representative
+UpdateStockToSalesRepresentative=Update stock to Sales Representative
+SalesRepName=Sales representative
+RecordCreated=Record added to database
+RecordUpdated=Database record updated
+RecordsList=Records List
+TotalQty=Total Qty

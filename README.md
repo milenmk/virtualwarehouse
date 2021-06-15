@@ -8,9 +8,9 @@ When a record is created, the QTY set to the Sales representative is removed fro
 
 main page of the module helps you track products and their Qty you have in your sales representatives.
 
-![Screenshot virtualwarehouse](img/image_1.png "VirtualWarehouse"){:height="25%" width="25%"}
-![Screenshot virtualwarehouse](img/image_2.png "VirtualWarehouse"){:height="25%" width="25%"}
-![Screenshot virtualwarehouse](img/image_3.png "VirtualWarehouse"){:height="25%" width="25%"}
+![Screenshot virtualwarehouse](img/image_1.png "VirtualWarehouse")
+![Screenshot virtualwarehouse](img/image_2.png "VirtualWarehouse")
+![Screenshot virtualwarehouse](img/image_3.png "VirtualWarehouse")
 
 Other external modules are available on [Dolistore.com](https://www.dolistore.com).
 

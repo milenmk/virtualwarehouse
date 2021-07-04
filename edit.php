@@ -121,11 +121,6 @@ $productname = $object->getProductName($product);
 
 echo $twig->render('form.editrecord.html.twig', ['obj' => $object, 'userid' => $user, 'productid' => $product, 'recordid' => $id, 'lang' => $langs, 'user' => $username, 'product' => $productname, 'qty' => $qty]);
 
-if (isset($_POST['update'])) {
-    $object->updateVirtualStock(GETPOST('fk_user', 'int'), GETPOST('fk_product', 'int'), GETPOST('qty', 'int'), GETPOST('recordId', 'int'));
-    //public function updateVirtualStock(int $user, int $product, int $qty, int $rowid)
-}
-
 // End of page
 llxFooter();
 $db->close();
